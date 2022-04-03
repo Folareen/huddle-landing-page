@@ -24,7 +24,7 @@ header{
     display: flex;
     justify-content: space-between;
     height: max-content;
-    padding: 30px;
+    padding: 20px;
 }
 header img{
     width: 100px;
@@ -90,12 +90,12 @@ main p{
     width: 100%;
 }
 .stat > *, .stat-txtbox{
-    margin-top: 60px;
+    /* margin-top: 60px; */
 }
 .stat-txtbox{
     width: 100%;
     text-align: center;
-    margin-top: 100px;
+    margin-top: 70px;
 }
 .stat-txtbox img{
     width: 30px;
@@ -125,7 +125,7 @@ main p{
     flex-direction: column;
     justify-content: center;
     margin-top: 152px;
-    min-height: 95vh;
+    min-height: 80vh;
     background-color: var(--paleblue);
     position: relative;
     text-align: center;
