@@ -39,6 +39,9 @@ header a{
     border: 1px solid var(--pink);
     border-radius: 20px;
 }
+header a:hover, header a:focus{
+    box-shadow: 0 0 .5px .5px var(--lightpink);
+}
 
 main{
     min-height: 80vh;
@@ -72,6 +75,10 @@ main p{
     margin: 40px auto 0 auto;
     font-weight: 600;
 }
+.started:hover, .started:focus{
+    box-shadow: 0 0 5px 2px rgba(0, 0, 0, .2);
+    cursor: pointer;
+}
 
 .stat{
     display: flex;
@@ -88,9 +95,6 @@ main p{
 }
 .stat >img{
     width: 100%;
-}
-.stat > *, .stat-txtbox{
-    /* margin-top: 60px; */
 }
 .stat-txtbox{
     width: 100%;
@@ -226,16 +230,24 @@ input[type="text"]{
     width: 100%;
     margin-bottom: 15px;
 }
+input[type="text"]:focus{
+    outline: 1px solid var(--lightred);
+}
 input[type="submit"]{
     margin-right: 0;
     margin-left: auto;
     padding: 15px 20px;
     width: 50%;
+    max-width: 200px;
     color: var(--white);
     background-color: var(--pink);
     border: none;
     font-weight: 700;
     border-radius: 5px;
+}
+input[type="submit"]:hover, input[type="submit"]:focus{
+    box-shadow: 0 0 1px 1px var(--lightpink);
+    cursor: pointer;
 }
 
 .footer{
@@ -258,6 +270,10 @@ input[type="submit"]{
 }
 .attribution a{
     color: var(--paleblue);
+    text-decoration: none;
+}
+.attribution a:hover{
+    text-decoration: underline;
 }
 
 .footer .contact{
@@ -282,3 +298,13 @@ input[type="submit"]{
     margin-right: .7em;
     border-radius: 2px;
 }
+.social-links a:hover i, .social-links a:focus i{
+    color: hsl(217, 50%, 42%);
+}
+
+/* @media screen and (min-width:425px) and (max-width: 1440px) {
+    body{
+        background-color: var(--lightred);
+    }
+    
+} */
