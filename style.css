@@ -25,14 +25,15 @@ header{
     justify-content: space-between;
     height: max-content;
     padding: 20px;
+    font-size: 1rem;
 }
 header img{
     width: 100px;
     height: 20px;
 }
 header a{
-    font-size: .8rem;
-    padding: .4em 1.4em;
+    font-size: .8em;
+    padding: 10px 20px;
     display: inline-flex;
     text-decoration: none;
     color: var(--pink);
@@ -51,18 +52,18 @@ main{
     text-align: center;
     padding: 25px;
     color: var(--darkcyan);
-
+    font-size: 1rem;
 }
 main *{
     margin-top: 40px;
 }
 main h3{
     font-family: var(---headingfont);
-    font-size: 1.8rem;
+    font-size: 1.8em;
     line-height: 1.5;
 }
 main p{
-    font-size: 1rem;
+    font-size: 1em;
     font-weight: 300;
 }
 .started {
@@ -83,11 +84,13 @@ main p{
 .stat{
     display: flex;
     flex-direction: column;
+    font-size: 1rem;
 }
 .stat-txtbox-container{
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding: 50px 0;
 }
 .stat > img:first-child{
     width: 80%;
@@ -106,7 +109,7 @@ main p{
 }
 .stat-txtbox h4{
     font-family: var(---headingfont);
-    font-size: 3.5rem;
+    font-size: 3.5em;
     font-weight: 900;
     display: flex;
     flex-direction: column;
@@ -116,10 +119,10 @@ main p{
     color: var(--darkcyan);
 }
 .stat-txtbox:first-child h4{
-    font-size: 4.05rem ;
+    font-size: 4.05em ;
 }
 .stat-txtbox p{
-    font-size: 18px;
+    font-size: 1.15em;
     text-align: center;
     color: var(--darkcyan);
 }
@@ -128,22 +131,28 @@ main p{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: center;
     margin-top: 152px;
     min-height: 80vh;
     background-color: var(--paleblue);
     position: relative;
     text-align: center;
     color: var(--darkcyan);
+    font-size: 1rem;
 }
 .features img{
     width: 100%;
 }
-.features img:nth-child(2), .flowing img{
-    width: 70%;
-    margin: 0 auto;
+.features img:nth-child(3), .flowing img{
+    padding: 50px;
+    width: 100%;
+    /* margin: 0 auto; */
 }
 .flowing{
     background-color: white;
+}
+img[src*="desktop"]{
+    display: none;
 }
 .features img[src*="mobile"]{
     width: 100%;
@@ -175,7 +184,7 @@ main p{
 .features p{
     padding: 0 25px 25px 25px;
     font-weight: 300;
-    font-size: 18px;
+    font-size: 1.15rem;
     font-family: var(--body);
 }
 
@@ -186,10 +195,12 @@ main p{
     align-items: center;
     justify-content: center;
     text-align: center;
+    font-size: 1rem;
+    margin: 50px 0;
 }
 .ready h3{
     font-family: var(---headingfont);
-    font-size: 1.8rem;
+    font-size: 1.8em;
 }
 
 footer{
@@ -200,17 +211,19 @@ footer{
     color: var(--white);
     position: relative;
     min-height: 100vh;
+    font-size: 1rem;
 }
 footer img[src*="footer-top-mobile"]{
     position: absolute;
-    top: -52px;
+    height: 55px;
+    top: -55px;
     width: 100%;
 }
 footer form{
     padding: 30px;
 }
 footer h4{
-    font-size: 1.5rem;
+    font-size: 1.5em;
     text-transform: uppercase;
     margin: 10px 0;
 }
@@ -302,9 +315,59 @@ input[type="submit"]:hover, input[type="submit"]:focus{
     color: hsl(217, 50%, 42%);
 }
 
-/* @media screen and (min-width:425px) and (max-width: 1440px) {
-    body{
-        background-color: var(--lightred);
+@media screen and (min-width:700px){
+    header, main, .stat, .features, .ready, footer {
+        font-size: 1.1rem;
     }
-    
-} */
+    header img{
+        width: 150px;
+        height: 40px;
+    }
+
+    .stat-txtbox-container{
+        flex-direction: row;
+    }
+    .features{
+        flex-direction: row;
+    }
+
+    .features img:nth-child(3), .flowing img{
+        width: 50%;
+    }
+
+    .features-txtbox{
+        width: 50%;
+    }
+
+    img[src*="mobile"]{
+        display: none;
+    }
+    img[src*="desktop"]{
+        display: block;
+        width: 100% !important;
+        margin: 0;
+        height: 150px;
+    }
+    .grow img[src*="top-desktop-1"]{
+        position: absolute;
+        top: -150px;
+    }
+    .grow img[src*="bottom-desktop-1"]{
+        position: absolute;
+        bottom: -150px;
+    }
+    .users img[src*="top-desktop-2"]{
+        position: absolute;
+        top: -150px;
+    }
+    .users img[src*="bottom-desktop-2"]{
+        position: absolute;
+        bottom: -150px;
+    }
+
+    footer img[src*="footer-top-desktop"]{
+        position: absolute;
+        top: -150px;
+    }
+
+}
