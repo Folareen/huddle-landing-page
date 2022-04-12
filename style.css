@@ -59,7 +59,7 @@ main *{
 }
 main h3{
     font-family: var(---headingfont);
-    font-size: 1.8em;
+    font-size: 2em;
     line-height: 1.5;
 }
 main p{
@@ -133,7 +133,7 @@ main p{
     justify-content: center;
     align-items: center;
     margin-top: 152px;
-    min-height: 80vh;
+    /* min-height: 80vh; */
     background-color: var(--paleblue);
     position: relative;
     text-align: center;
@@ -144,9 +144,12 @@ main p{
     width: 100%;
 }
 .features img:nth-child(3), .flowing img{
-    padding: 50px;
+    margin: 50px;
     width: 100%;
-    /* margin: 0 auto; */
+    height: 100%;
+    max-height: 500px;
+    max-width: 500px;
+    object-fit: cover;
 }
 .flowing{
     background-color: white;
@@ -175,7 +178,7 @@ img[src*="desktop"]{
     bottom: -110px;
 }
 .features h4{
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 700;
     font-family: var(---headingfont);
     padding: 25px;
@@ -189,14 +192,17 @@ img[src*="desktop"]{
 }
 
 .ready{
-    min-height: 80vh;
+    /* min-height: 80vh; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     text-align: center;
     font-size: 1rem;
-    margin: 50px 0;
+    margin: 150px 0 150px 0 ;
+    /* border: 1px solid red; */
+    padding: 70px 0;
+
 }
 .ready h3{
     font-family: var(---headingfont);
@@ -210,7 +216,7 @@ footer{
     background-color: var(--darkcyan);
     color: var(--white);
     position: relative;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     font-size: 1rem;
 }
 footer img[src*="footer-top-mobile"]{
@@ -319,15 +325,27 @@ input[type="submit"]:hover, input[type="submit"]:focus{
     header, main, .stat, .features, .ready, footer {
         font-size: 1.1rem;
     }
+    header{
+        padding: 3em;
+    }
     header img{
         width: 150px;
         height: 40px;
+    }
+
+    main p{
+        width: 70%;
+        margin: 0 auto;
     }
 
     .stat-txtbox-container{
         flex-direction: row;
     }
     .features{
+        flex-direction: row-reverse;
+    }
+
+    .flowing{
         flex-direction: row;
     }
 
@@ -365,6 +383,13 @@ input[type="submit"]:hover, input[type="submit"]:focus{
         bottom: -150px;
     }
 
+    .ready{
+        padding: 100px 0;
+    }
+
+    footer{
+        /* height: max-content; */
+    }
     footer img[src*="footer-top-desktop"]{
         position: absolute;
         top: -150px;
