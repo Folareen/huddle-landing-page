@@ -59,7 +59,7 @@ main *{
 }
 main h3{
     font-family: var(---headingfont);
-    font-size: 2em;
+    font-size: 3em;
     line-height: 1.5;
 }
 main p{
@@ -135,7 +135,7 @@ main p{
     margin-top: 152px;
     background-color: var(--paleblue);
     position: relative;
-    text-align: center;
+    text-align: left;
     color: var(--darkcyan);
     font-size: 1rem;
 }
