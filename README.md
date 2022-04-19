@@ -29,10 +29,10 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2/hub/responsive-landing-page-using-css-flexbox-and-media-queries-Sy_CpWmV9)
+- Solution URL: [frontend mentor solution](https://www.frontendmentor.io/challenges/huddle-landing-page-with-curved-sections-5ca5ecd01e82137ec91a50f2/hub/responsive-landing-page-using-css-flexbox-and-media-queries-Sy_CpWmV9)
 
 #### live site url
-- Live Site URL: [Add live site URL here](https://huddle-landing-page12.netlify.app/)
+- Live Site URL: [https://huddle-landing-page12.netlify.app/](https://huddle-landing-page12.netlify.app/)
 
 
 ### Built with
