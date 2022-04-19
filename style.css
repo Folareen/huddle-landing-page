@@ -45,7 +45,6 @@ header a:hover, header a:focus{
 }
 
 main{
-    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -57,10 +56,11 @@ main{
 main *{
     margin-top: 40px;
 }
-main h3{
+main h2{
     font-family: var(---headingfont);
-    font-size: 3em;
+    font-size: 2.5em;
     line-height: 1.5;
+    margin-top: 50px;
 }
 main p{
     font-size: 1em;
@@ -135,7 +135,7 @@ main p{
     margin-top: 152px;
     background-color: var(--paleblue);
     position: relative;
-    text-align: left;
+    text-align: center;
     color: var(--darkcyan);
     font-size: 1rem;
 }
@@ -336,12 +336,17 @@ input[type="submit"]:hover, input[type="submit"]:focus{
         width: 70%;
         margin: 0 auto;
     }
+    main h2{
+        font-size: 3em;
+    }
 
     .stat-txtbox-container{
         flex-direction: row;
     }
+    
     .features{
         flex-direction: row-reverse;
+        text-align: left;
     }
 
     .flowing{
